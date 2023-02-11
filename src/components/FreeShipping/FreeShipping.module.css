@@ -1,0 +1,29 @@
+.freeshipping{
+    padding: .2rem;
+    color: #005099;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.freeshipping:hover{
+    background-color: #f0f5f9;
+}
+
+.arrow{
+    transition: .5s;
+}
+
+.arrow:hover{
+    transform: scale(1.1);
+}
+
+@media(max-width:576px){
+    .freeshipping{
+        text-align: left;
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+}
