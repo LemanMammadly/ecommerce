@@ -1,0 +1,83 @@
+#menubar{
+    position: absolute;
+    left: 0;
+    top: -25px;
+    background-color: white;
+    height: 100vh;
+    width: 85%;
+    overflow-x: scroll;
+}
+
+#menubar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0 20px;
+}
+
+#menubar ul li{
+    color: #005099;
+}
+#menubar ul span i{
+   position: absolute;
+   right: 49px;
+}
+
+#menubar .x{
+    color: #005099;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+#menubar ul a{
+    text-decoration: none;
+    color: #005099;
+}
+
+#menubar .main{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+#menubar hr{
+    color: #005099;
+    border: .5px solid #005099;
+    margin-right: 20px;
+}
+
+#menubar .dropdown li{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+#menubar .dropdown a{
+    font-size: 17px;
+    letter-spacing: .1px;
+    font-weight: 400;
+}
+
+#menubar .dropdown1{
+    display: none;
+}
+
+#menubar .dropdown2{
+    display: none;
+}
+
+#menubar .dropdown3{
+    display: none;
+}
+
+#menubar .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 23px;
+}
+
+#menubar .iconstop{
+    position: relative;
+    top: 240px;
+}
+

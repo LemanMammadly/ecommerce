@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Menubar from '../Menubar/Menubar'
 import './Header.css'
 
 const Header = () => {
@@ -72,25 +73,31 @@ const Header = () => {
         document.body.classList.remove("stop-scrolling");
     }
 
+    const openMenubar=()=>{
+        document.getElementById('menubar').style.display='block'
+    }
+
   return (
-    <header className='containerheader'>
-        <div className="all row align-items-center justify-content-center col-lg-12">
-        <div className="left col-lg-4 text-center">
+    <header className='containerheader col-12'>
+        <div className="all d-flex align-items-center justify-content-center col-lg-12 col-12">
+        <div className="left col-lg-4 text-center col-2">
+            <Link onClick={openMenubar} className='bars' to='/'><i class="fa-solid fa-bars"></i></Link>
+            <Link className='search' to='/'><i onClick={openSearch} class="fa-solid fa-magnifying-glass"></i></Link>
             <Link  onMouseEnter={showProducts} onMouseLeave={hide} className='productslink' to='/'>Products</Link>
             <Link  onMouseEnter={showStory} onMouseLeave={hideStory} to='/'>Our Story</Link>
             <Link to='/'>Ingredients</Link>
         </div>
-        <div className="center col-lg-4 text-center">
+        <div className="center col-lg-4 col-6 text-center">
             <img id='normimg' src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/PF_Logo_White_Web-01_190x.png?v=1654228576%201x,%20//cdn.shopify.com/s/files/1/0012/2296/7353/files/PF_Logo_White_Web-01_190x@2x.png?v=1654228576%202x" alt="" />
         </div>
-        <div className='right col-lg-4 text-center row'>
+        <div className='right col-lg-4 col-3 text-center row'>
             <div className="rightlinks">
             <Link to='/'>Find Us</Link>
             <Link onMouseEnter={showBlog} onMouseLeave={hideBlog} to='/'>Blog</Link>
             </div>
             <div className="icons">
-            <Link to='/'><i onClick={openSearch} class="fa-solid fa-magnifying-glass"></i></Link>
-            <Link to='/'><i class="fa-regular fa-user"></i></Link>
+            <Link className='searchNorm' to='/'><i onClick={openSearch} class="fa-solid fa-magnifying-glass"></i></Link>
+            <Link className='user' to='/'><i class="fa-regular fa-user"></i></Link>
             <Link to='/'><i onClick={openBasket} class="fa-solid fa-dolly"></i></Link>
             </div>
         </div>
@@ -181,8 +188,8 @@ const Header = () => {
         </div>
         <div id="allsearch">
         <div className="blocker" onClick={hidePopup}></div>
-        <div id="search" className='d-flex align-items-center justify-content-center col-lg-12'>
-        <div className="form d-flex align-items-center col-lg-4">
+        <div id="search" className='d-flex align-items-center justify-content-center col-lg-12 col-12'>
+        <div className="form d-flex align-items-center col-lg-4 col-9">
             <input type="text" className='form-control shadow-none input' placeholder='Search'/>
             <i className="fa-solid fa-magnifying-glass"></i>
         </div>
@@ -204,6 +211,7 @@ const Header = () => {
                 </div>
             </div>
         </div>
+        <Menubar id='menubar'/>
     </header>
   )
 }

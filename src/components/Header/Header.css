@@ -26,6 +26,14 @@ header{
     opacity: 0;
 }
 
+.containerheader .left .search{
+    display: none;
+}
+
+.containerheader .left .bars{
+    display: none;
+}
+
 .containerheader .left a:hover:after{
     opacity: 1;
 }
@@ -242,7 +250,7 @@ header{
     background-color: #ffffff;
     width: 33%;
     height: 100vh;
-    top: 0;
+    top: -38px;
     right: 0;
     position: absolute;
 }
@@ -295,3 +303,72 @@ header{
     height: 100%;
     overflow: hidden;
 }
+
+#menubar{
+    display: none;
+}
+
+
+@media(max-width:576px){
+    .containerheader .left a{
+        display: none;
+    }
+    .containerheader .left .search{
+        display: block;
+    }
+    .containerheader .left .bars{
+        display: block;
+    }
+    .containerheader .right .rightlinks a{
+        display: none;
+    }
+    .containerheader .right .icons .searchNorm{
+        display: none;
+    }
+    .containerheader .center img{
+        width: 100%;
+    }
+    .containerheader .left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+    .containerheader .left .search{
+        margin-left: 15px;
+    }
+    .containerheader .left .bars{
+        margin-left: 0;
+    }
+    .containerheader .right .icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .containerheader .right .fa-dolly{
+        margin-left: 15px !important;
+    }
+    .containerheader .right .fa-user{
+        margin-left: 0 !important;
+    }
+    .containerheader .center{
+        text-align: center !important;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .basket{
+        background-color: #ffffff;
+        width: 85%;
+        height: 100vh;
+        top: -25px;
+        right: 0;
+        position: absolute;
+    }
+    #menubar{
+        display: block;
+    }
+}
+
+
+
