@@ -37,6 +37,7 @@ const Menubar = () => {
 
     const closeMenubar=()=>{
         document.getElementById('menubar').style.display='none'
+        document.body.classList.remove("stop-scrolling");
     }
   return (
     <div id='menubar'>

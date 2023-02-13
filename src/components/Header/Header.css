@@ -308,7 +308,6 @@ header{
     display: none;
 }
 
-
 @media(max-width:576px){
     .containerheader .left a{
         display: none;
@@ -364,9 +363,6 @@ header{
         top: -25px;
         right: 0;
         position: absolute;
-    }
-    #menubar{
-        display: block;
     }
 }
 

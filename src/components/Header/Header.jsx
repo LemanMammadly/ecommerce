@@ -75,6 +75,7 @@ const Header = () => {
 
     const openMenubar=()=>{
         document.getElementById('menubar').style.display='block'
+        document.body.classList.add("stop-scrolling");
     }
 
   return (
