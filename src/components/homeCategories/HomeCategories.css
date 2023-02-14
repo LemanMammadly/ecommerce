@@ -1,0 +1,98 @@
+.homeCategories .leftcategory{
+    background-color: #F6B8E1;
+    padding: 30px 0 0 0;
+}
+
+.homeCategories .centercategory{
+    background-color: #ABDBE9;
+    padding: 30px 0 0 0;
+}
+
+.homeCategories .rightcategory{
+    background-color: #61CE94;
+    padding: 30px 0 0 0;
+}
+
+.homeCategories .leftcategory .allleft,.centercategory .allcenter, .rightcategory .allright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.homeCategories .leftcategory h2, .centercategory h2, .rightcategory h2{
+    color: #005099;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.homeCategories .leftcategory .btn1, .centercategory .btn2, .rightcategory .btn3{
+    position: relative;
+    color: #005099;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    margin-bottom: 40px;
+    transition: .5s;
+}
+
+.homeCategories .leftcategory .btn1:hover, .centercategory .btn2:hover, .rightcategory .btn3:hover{
+    color: #fff;
+}
+
+.homeCategories .leftcategory img{
+    width: 45%;
+    height: 300.5px;
+}
+
+
+.homeCategories .centercategory img{
+    width: 55%;
+    height: 300.5px;
+}
+
+.homeCategories .rightcategory img{
+    width: 55%;
+    height: 300.5px;
+}
+
+.homeCategories .leftcategory .btn1:after, .centercategory .btn2:after, .rightcategory .btn3:after{
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    height: 4.5px;
+    width: 100%;
+    left: 0;
+    top: 30px;
+    transition: .5s;
+}
+
+
+@media(max-width:576px){
+    .homeCategories .all{
+        display: flex;
+        flex-direction: column;
+    }
+    .homeCategories .leftcategory h2, .centercategory h2, .rightcategory h2{
+        font-size: 27px;
+    }
+    .homeCategories .leftcategory .btn1, .centercategory .btn2, .rightcategory .btn3{
+        font-size: 15px;
+    }
+    .homeCategories .leftcategory img{
+        width: 45%;
+        height: 250px;
+    }
+    
+    
+    .homeCategories .centercategory img{
+        width: 55%;
+        height: 250px;
+    }
+    
+    .homeCategories .rightcategory img{
+        width: 55%;
+        height: 250px;
+    }
+    
+}

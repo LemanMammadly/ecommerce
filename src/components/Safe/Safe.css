@@ -1,0 +1,65 @@
+.safe .all{
+    text-align: center;
+    padding: 0 0 1.5rem 0;
+}
+.safe .topsafe{
+    background-image: url('https://cdn.shopify.com/s/files/1/0012/2296/7353/files/pink-dots.svg?v=1640242998');
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: center;
+    padding: 2rem;
+}
+
+.safe .topsafe h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #005099;
+    margin-top: 60px;
+}
+
+.safe .topsafe p{
+    font-size: 22px;
+    font-weight: 500;
+    color: #005099;
+}
+
+.safe .bottomsafe{
+    gap: 40px;
+
+}
+
+.safe .bottomsafe p{
+    font-size: 18px;
+    font-weight: 450;
+    margin-top: 20px;
+    color: #005099;
+}
+
+.safe .bottomsafe .icondiv{
+    font-size: 90px;
+    color: #005099;
+    border: 2px solid #005099;
+    border-radius: 50%;
+    padding: 10px 15px;
+}
+
+
+@media(max-width:576px){
+    .safe .topsafe h2{
+        font-size: 30px;
+    }
+    
+    .safe .topsafe p{
+        font-size: 18px;
+    }
+    .safe .bottomsafe p{
+        font-size: 16px;
+    }
+    .safe .all .bottomsafe{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .safe .bottomsafe .icondiv{
+        font-size: 75px;
+    }
+}

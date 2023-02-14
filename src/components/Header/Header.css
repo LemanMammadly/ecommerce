@@ -79,17 +79,18 @@ header{
     transform: scale(1.1);
 }
 
-#allproduct{
-    padding: 30px 0;
-}
 
 .productsmenu{
-    padding: 2rem 4rem;
+    padding: 2rem 0;
     background-color: #fff;
+    position:absolute;
+    z-index: 3333333;
 }
 
 .productsmenu .leftpmenu ul{
     list-style-type: none;
+    margin-top: 40px;
+    margin-left: 80px;
 }
 
 .productsmenu .leftpmenu ul li{
@@ -112,6 +113,7 @@ header{
     cursor: pointer;
     width: 55%;
     margin-bottom: 15px;
+    margin-top: 40px;
 }
 
 .productsmenu .rightpmenu .box .p{
@@ -135,18 +137,20 @@ header{
 
 #allstory{
     display: none;
-    padding: 30px 0;
 }
 
 .storymenu{
     padding: 2rem 10rem;
     background-color: #fff;
+    position:absolute;
+    z-index: 3333333;
 }
 
 .storymenu .box img{
     cursor: pointer;
     width: 100%;
     margin-bottom: 15px;
+    margin-top: 40px;
 }
 
 .storymenu .box:hover  .p{
@@ -165,20 +169,23 @@ header{
 
 #allblog{
     display: none;
-    padding: 30px 0;
 }
 
 
 .blogmenu{
     padding: 2rem 10rem;
     background-color: #fff;
+    position:absolute;
+    z-index: 3333333;
+    width: 100%;
 }
 
 
 .blogmenu .box img{
     cursor: pointer;
-    width: 75%;
+    width: 70%;
     margin-bottom: 15px;
+    margin-top: 40px;
 }
 
 
@@ -199,6 +206,8 @@ header{
     background-color: #fff;
     padding: 15px 0;
     margin-top: -63px;
+    z-index: 33333333;
+    position: absolute;
 }
 
 #search i{
@@ -240,6 +249,7 @@ header{
     right: 0;
     content: ' ';
     background: rgba(0,0,0,.5);
+    z-index: 2222222;
 }
 
 #basket{
@@ -253,6 +263,7 @@ header{
     top: -38px;
     right: 0;
     position: absolute;
+    z-index: 33333333;
 }
 
 
@@ -286,6 +297,7 @@ header{
     color: #005099;
     padding: 3px 4px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 #basket .blockerBasket{
@@ -296,6 +308,7 @@ header{
     right: 0;
     content: ' ';
     background: rgba(0,0,0,.5);
+    z-index: 222222;
 }
 
 

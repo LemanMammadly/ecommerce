@@ -1,0 +1,68 @@
+.homehero{
+    padding:2rem 6rem;
+    background-color: #fabfa8;
+    height: 100vh;
+}
+
+.homehero .lefthero h1{
+    color: #005099;
+    font-weight: 700;
+    font-size: 83px;
+}
+
+.homehero .lefthero p{
+    color: #005099;
+    font-size: 22px;
+    font-weight:500;
+    margin:25px 0;
+}
+
+.homehero .lefthero .btn{
+    background-color: #005099;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 30px;
+    font-weight: bold;
+    border-radius: 0;
+    transition: .5s;
+}
+
+
+.homehero .lefthero .btn:hover{
+    background-color: #fff;
+    color: #005099;
+}
+
+.homehero .righthero img{
+    width: 100%;
+}
+
+@media(max-width:576px){
+    .homehero{
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+    }
+    .homehero .all{
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    .homehero .lefthero h1{
+        color: #005099;
+        font-weight: 700;
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    
+    .homehero .lefthero p{
+        color: #005099;
+        font-size: 14px;
+        font-weight:500;
+        margin:25px 0;
+    }
+    .homehero .lefthero .btn{
+        padding: 7px 20px;
+    }
+}
