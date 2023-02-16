@@ -1,0 +1,100 @@
+.ingredients{
+    padding: 4rem 7rem;
+    background-color: #91dfb9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ingredients .leftingredients h2{
+    color: #005099;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.ingredients .leftingredients p{
+    color: #005099;
+    font-size: 22px;
+    line-height: 35px;
+    margin: 35px 0;
+}
+
+.ingredients .leftingredients a{
+    color: #005099;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    position: relative;
+}
+
+.ingredients .leftingredients a::after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    top: 24px;
+    left: 0;
+    background-color: #fff;
+}
+
+.ingredients .rightingredients{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: end;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ingredients .rightingredients .imgdiv{
+    width: 30%;
+    position: relative;
+}
+
+.ingredients .rightingredients .imgdiv img{
+    width: 60%;
+   
+}
+
+.ingredients .rightingredients .imgdiv #openText{
+    cursor: pointer;
+    position: absolute;
+    left: 70px;
+    color: #fff;
+    font-size: 13px;
+    background-color: #007367;
+    border-radius: 50%;
+    padding: 5px 6px;
+    font-weight: 200;
+}
+
+.ingredients .rightingredients .ginger{
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 5px;
+    position: absolute;
+    top:10px;
+    left: 85px;
+    width: 190px;
+    z-index: 1;
+}
+
+.ingredients .rightingredients .none{
+    display: none;
+}
+.ingredients .rightingredients .block{
+    display: block;
+}
+
+.ingredients .rightingredients .ginger h5{
+    color: #005099;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.ingredients .rightingredients .ginger p{
+    color: #005099;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+}
+ 
