@@ -55,7 +55,7 @@
    
 }
 
-.ingredients .rightingredients .imgdiv #openText{
+.ingredients .rightingredients .imgdiv .openText{
     cursor: pointer;
     position: absolute;
     left: 70px;
@@ -67,7 +67,21 @@
     font-weight: 200;
 }
 
-.ingredients .rightingredients .ginger{
+.ingredients .rightingredients .imgdiv .openTextblock{
+    transform: rotate(45deg);
+    transition: .3s ease-in-out;
+    background-color: #fff !important;
+    color: #007367 !important;
+}
+
+.ingredients .rightingredients .imgdiv .openTextnone{
+    transform: rotate(0deg);
+    transition: .3s ease-in-out;
+    background-color: #007367 !important;
+    color: #fff !important;
+}
+
+.ingredients .rightingredients .ginger, .vanilla , .oat , .flax, .rose{
     background-color: #fff;
     border-radius: 30px;
     padding: 5px;
@@ -76,7 +90,21 @@
     left: 85px;
     width: 190px;
     z-index: 1;
+} 
+
+.ingredients .rightingredients .ginger h5, .vanilla h5, .oat h5 , .flax h5 , .rose h5{
+    color: #005099;
+    font-weight: bold;
+    margin-top: 10px;
 }
+
+.ingredients .rightingredients .ginger p,.vanilla p, .oat p , .flax p, .rose p{
+    color: #005099;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+}
+ 
 
 .ingredients .rightingredients .none{
     display: none;
@@ -85,16 +113,4 @@
     display: block;
 }
 
-.ingredients .rightingredients .ginger h5{
-    color: #005099;
-    font-weight: bold;
-    margin-top: 10px;
-}
 
-.ingredients .rightingredients .ginger p{
-    color: #005099;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 22px;
-}
- 
