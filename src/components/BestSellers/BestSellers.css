@@ -1,0 +1,127 @@
+.bestsellers{
+    padding: 2rem 7rem;
+}
+
+.bestsellers .top h2{
+    color: #005099;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+.bestsellers .top i{
+    color: #005099;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.bestsellers .bottom{
+    padding: 2rem 0;
+}
+
+.bestsellers .bottom img{
+    background-color: rgba(199, 200, 202, 0.206);
+    padding: 40px 0;
+    margin: 20px 0;
+}
+
+.bestsellers .bottom .bottombottom{
+    color: #005099;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.bestsellers .bottom .icondiv{
+    margin-top: -10px;
+}
+
+.bestsellers .bottom .icondiv .green {
+    color: #007367;
+}
+
+.bestsellers .bottom .icondiv span{
+    font-size: 13px;
+}
+
+.bestsellers .bottom .price{
+    color:#81A2C9;
+    font-weight: 500;
+}
+
+
+
+.bestsellers .bottom .bottombox{
+    position: relative;
+}
+
+.bestsellers .bottom .bottombox:hover .bottombottom{
+    color: #91DFB9;
+}
+
+.bestsellers .bottom .bottombox:hover .quickadd{
+    opacity: 1;
+}
+
+.bestsellers .bottom .best{
+    position: absolute;
+    top: -15px;
+    right: 35px;
+    text-align: center;
+    color: #005099;
+    font-weight: 800;
+    border-radius: 50%;
+    font-size: 13px;
+    padding: 20px 15px;
+    background-color: #91DFB9;
+}
+
+
+.bestsellers .bottom .quickadd{
+    position: absolute;
+    bottom:22%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 85%;
+    transition: .3s;
+    opacity: 0;
+}
+
+.bestsellers .bottom .quickadd:hover button{
+    background-color: #91DFB9;
+    color: #fff;
+    border: 1px solid #91DFB9;
+}
+
+
+
+.bestsellers .bottom .quickadd button{
+    border: none;
+    background-color: #fff;
+    padding: 15px 0;
+    width: 100%;
+    outline: none;
+    border: 1px solid #005099;
+    color: #005099;
+    font-weight: 800;
+    font-size: 17px;
+    transition: .3s;
+}
+
+
+@media(max-width:576px){
+    .bestsellers{
+        padding: 2rem 0rem;
+    }
+    
+    .bestsellers .top h2{
+        font-size: 28px;
+    }
+    .bestsellers .top i{
+        display: none;
+    }
+    .bestsellers .bottom{
+        display: flex;
+        flex-direction: column;
+    }
+}

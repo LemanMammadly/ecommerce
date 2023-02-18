@@ -24,6 +24,11 @@
     font-weight: bold;
     font-size: 17px;
     position: relative;
+    transition: .3s;
+}
+
+.ingredients .leftingredients a:hover{
+    color: #fff;
 }
 
 .ingredients .leftingredients a::after{
@@ -52,7 +57,6 @@
 
 .ingredients .rightingredients .imgdiv img{
     width: 60%;
-   
 }
 
 .ingredients .rightingredients .imgdiv .openText{
@@ -81,10 +85,10 @@
     color: #fff !important;
 }
 
-.ingredients .rightingredients .ginger, .vanilla , .oat , .flax, .rose{
+.ingredients .rightingredients .ginger, .vanilla , .oat , .flax, .rose , .cinnamon{
     background-color: #fff;
     border-radius: 30px;
-    padding: 5px;
+    padding: 0 5px;
     position: absolute;
     top:10px;
     left: 85px;
@@ -92,13 +96,25 @@
     z-index: 1;
 } 
 
-.ingredients .rightingredients .ginger h5, .vanilla h5, .oat h5 , .flax h5 , .rose h5{
+
+.ingredients .rightingredients .cinnamon{
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 0 5px;
+    position: absolute;
+    top:-200px;
+    left: -110px;
+    width: 190px;
+    z-index: 1;
+}
+
+.ingredients .rightingredients .ginger h5, .vanilla h5, .oat h5 , .flax h5 , .rose h5 , .cinnamon h5{
     color: #005099;
     font-weight: bold;
     margin-top: 10px;
 }
 
-.ingredients .rightingredients .ginger p,.vanilla p, .oat p , .flax p, .rose p{
+.ingredients .rightingredients .ginger p,.vanilla p, .oat p , .flax p, .rose p , .cinnamon p{
     color: #005099;
     font-weight: 400;
     font-size: 15px;
@@ -114,3 +130,60 @@
 }
 
 
+@media(max-width:576px){
+    .ingredients{
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ingredients .all{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .ingredients .rightingredients{
+        gap: 0;
+        row-gap: 20px;
+        padding: 40px 0;
+        text-align: center;
+    }
+    .ingredients .rightingredients .imgdiv img{
+        width: 80%;
+    }
+    .ingredients .rightingredients .imgdiv .openText{
+        left: 0px;
+    }
+    .ingredients .rightingredients .ginger, .vanilla , .oat , .flax, .rose , .cinnamon{
+        left: 20px;
+    } 
+    .ingredients .rightingredients .cinnamon{
+        top:-200px;
+        left: -180px;
+    }
+    .ingredients .rightingredients .oat {
+        top:-115px;
+        left: -180px;
+    }
+    .ingredients .leftingredients{
+        padding: 0;
+    }
+    .ingredients .leftingredients h2{
+        font-size: 30px;
+    }
+    
+    .ingredients .leftingredients p{
+        font-size: 16px;
+        line-height: 24px;
+        margin: 15px 0;
+    }
+    
+    .ingredients .leftingredients a{
+        font-size: 14px;
+    }
+    .ingredients .leftingredients a::after{
+        content: '';
+        top: 20px;
+    }
+}

@@ -7,32 +7,46 @@ const Ingredients = () => {
   const [vanillas,setVanillas]=useState('none')
   const [oats,setOats]=useState('none')
   const [flax,setFlax]=useState('none')
+  const [roses,setRose]=useState('none')
+  const [cinnamons,setCinnamon]=useState('none')
   const [icon1,setIcon1]=useState("openTextnone")
   const [icon2,setIcon2]=useState("openTextnone")
   const [icon3,setIcon3]=useState("openTextnone")
   const [icon4,setIcon4]=useState("openTextnone")
+  const [icon5,setIcon5]=useState("openTextnone")
+  const [icon6,setIcon6]=useState("openTextnone")
 
 
   useEffect(() => {
     document.addEventListener("click", handleClickOutside1, true);
   }, []);
 
-  useEffect(() => {
+  useEffect(()=>{
     document.addEventListener("click", handleClickOutside2, true);
-  }, []);
+  },[])
 
-  useEffect(() => {
+  useEffect(()=>{
     document.addEventListener("click", handleClickOutside3, true);
-  }, []);
+  },[])
 
-  useEffect(() => {
+  useEffect(()=>{
     document.addEventListener("click", handleClickOutside4, true);
-  }, []);
+  },[])
+
+  useEffect(()=>{
+    document.addEventListener("click", handleClickOutside5, true);
+  },[])
+
+  useEffect(()=>{
+    document.addEventListener("click", handleClickOutside6, true);
+  },[])
 
   const refOne = useRef(null);
   const refTwo = useRef(null);
   const refThree = useRef(null);
   const refFour = useRef(null);
+  const refFive = useRef(null);
+  const refSix = useRef(null);
 
 
   const handleClickOutside1 = (e) => {
@@ -62,6 +76,21 @@ const Ingredients = () => {
         setIcon4("openTextnone")
     }
   }
+
+  const handleClickOutside5 = (e) => {
+    if (!refFive.current.contains(e.target)) {
+        setRose("none");
+        setIcon5("openTextnone")
+    }
+  }
+
+  const handleClickOutside6 = (e) => {
+    if (!refSix.current.contains(e.target)) {
+        setCinnamon("none");
+        setIcon6("openTextnone")
+    }
+  }
+
 
 
   const clickGinger = () => {
@@ -104,11 +133,30 @@ const Ingredients = () => {
     }
   };
 
+  const clickRose = () => {
+    if (roses === "none") {
+      setRose("block");
+      setIcon5("openTextblock")
+    } else {
+      setRose("none");
+      setIcon5("openTextnone")
+    }
+  };
+
+  const clickCinnamon = () => {
+    if (cinnamons === "none") {
+      setCinnamon("block");
+      setIcon6("openTextblock")
+    } else {
+      setCinnamon("none");
+      setIcon6("openTextnone")
+    }
+  };
 
   return (
     <section className="ingredients">
-      <div className="all col-lg-12 d-flex">
-        <div className="leftingredients col-lg-5" >
+      <div className="all col-lg-12 col-12 d-flex">
+        <div className="leftingredients col-lg-5 col-12" >
           <h2>Because ingredients matter.</h2>
           <p>
             All of our products are baked with better-for-you, allergy-friendly
@@ -117,7 +165,7 @@ const Ingredients = () => {
           </p>
           <Link to="/">LEARN MORE ABOUT OUR INGREDIENTS</Link>
         </div>
-        <div className="rightingredients col-lg-7">
+        <div className="rightingredients col-lg-7 col-12">
           <div ref={refOne}  className="imgdiv imgbox1" onClick={clickGinger} >
             <img
               src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/HP-ginger_f08ff2d2-b048-47de-85cc-f427b88c2984.png?v=1640590204"
@@ -184,15 +232,15 @@ const Ingredients = () => {
               </p>
             </div>
           </div>
-          <div className="imgdiv">
+          <div ref={refFive} className="imgdiv imgbox5" onClick={clickRose}>
             <img
               src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/rosemary_c8ac195c-64d6-4964-987d-abf6337bd71c.png?v=1642487662"
               alt=""
             />
-            <i id="openText5" className="fa-solid fa-plus openText"></i>
+            <i id="openText5" className={`fa-solid fa-plus openText ${icon5}`}></i>
             <div
               id="rosesdiv"
-              className={`rose text-center`}
+              className={`rose text-center ${roses}`}
             >
               <h5>Rosemary</h5>
               <p>
@@ -200,12 +248,21 @@ const Ingredients = () => {
               </p>
             </div>
           </div>
-          <div className="imgdiv">
+          <div ref={refSix} className="imgdiv imgbox6" onClick={clickCinnamon}>
             <img
               src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/HP-cinammon_240x_4e7dcc87-d964-487d-8697-69dafed1e5ca.png?v=1640667337"
               alt=""
             />
-            <i id="openText6" className="fa-solid fa-plus openText"></i>
+            <i id="openText6" className={`fa-solid fa-plus openText ${icon6}`}></i>
+            <div
+              id="cinnamon"
+              className={`cinnamon text-center ${cinnamons}`}
+            >
+              <h5>Cinnamon</h5>
+              <p>
+              Traced back to Ancient Egypt, Cinnamon has been used for thousands of years as medicine and is now the 2nd most commonly used spice in the U.S.
+              </p>
+            </div>
           </div>
           <div className="text-divs">
             
