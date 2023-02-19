@@ -1,0 +1,74 @@
+.commentsSlider{
+    padding: 3rem 0;
+    z-index: 333333;
+}
+
+.commentsSlider .leftcomment{
+    background-image: url("https://cdn.shopify.com/s/files/1/0012/2296/7353/files/color-dot.svg?v=1640329975");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: center;
+    padding: 2rem;
+}
+
+.commentsSlider .leftcomment img{
+    width: 50%;
+}
+
+
+.commentsSlider .rightcomment p {  
+    height: 300px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #005099;
+    text-align: left;
+}  
+
+
+.commentsSlider .rightcomment .icon {
+    color: #f7b9e1;
+    font-size: 80px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 80px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #005099;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity 200ms ease;
+    border-radius: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #F7B8E1;
+}
+
+
+@media(max-width:576px){
+    .commentsSlider .all {
+        display: flex;
+        flex-direction: column;
+    }
+    .commentsSlider .all .rightcomment p {
+        font-size: 16px;
+    }
+
+.commentsSlider .leftcomment{
+    background-repeat: no-repeat;
+    background-size: 320px;
+    background-position: center;
+    padding: 2rem;
+}
+}

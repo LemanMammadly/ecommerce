@@ -1,0 +1,83 @@
+.featuredimage .rightfeatured {
+    background-color: #92C9D6;
+}
+
+.featuredimage .rightfeatured h2{
+    color: #225E6A;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.featuredimage .rightfeatured .textp{
+    color: #225E6A;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+
+
+.featuredimage .rightfeatured .allrighttext{
+    padding:50px;
+}
+
+.featuredimage .rightfeatured .iconfeatured {
+    margin: 50px 0;
+}
+
+.featuredimage .rightfeatured .iconfeatured i{
+    font-size: 30px;
+    color: #225E6A;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.featuredimage .rightfeatured .fristicon{
+    margin: 25px 0;
+}
+
+.featuredimage .rightfeatured .iconfeatured p{
+    font-size: 18px;
+    color: #225E6A;
+    font-weight: 700;
+}
+
+.featuredimage .rightfeatured a{
+    text-decoration: none;
+    color: #225E6A;
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 3.5px solid #225E6A;    
+    transition: .5s;
+}
+
+.featuredimage .rightfeatured a:hover{
+    color: #fff;
+    border-color: #fff;
+}
+
+
+@media(max-width:576px){
+    .featuredimage .all{
+        display: flex;
+        flex-direction: column;
+    }
+    .featuredimage .all .rightfeatured .allrighttext{
+        padding: 2rem .5rem;
+    }
+
+    .featuredimage .rightfeatured h2{
+        font-size: 25px;
+    }
+    .featuredimage .rightfeatured .textp{
+        font-size: 17px;
+        margin: 15px 0;
+    }    
+    .featuredimage .rightfeatured .iconfeatured p{
+        font-size: 15px;
+    }
+    .featuredimage .rightfeatured .iconfeatured {
+        margin: 30px 0;
+    }
+    
+}

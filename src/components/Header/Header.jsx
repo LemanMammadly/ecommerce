@@ -91,7 +91,7 @@ const Header = () => {
         <div className="center col-lg-4 col-6 text-center">
             <img id='normimg' src="https://cdn.shopify.com/s/files/1/0012/2296/7353/files/PF_Logo_White_Web-01_190x.png?v=1654228576%201x,%20//cdn.shopify.com/s/files/1/0012/2296/7353/files/PF_Logo_White_Web-01_190x@2x.png?v=1654228576%202x" alt="" />
         </div>
-        <div className='right col-lg-4 col-3 text-center row'>
+        <div className='right col-lg-4 col-3 text-center d-flex'>
             <div className="rightlinks">
             <Link to='/'>Find Us</Link>
             <Link onMouseEnter={showBlog} onMouseLeave={hideBlog} to='/'>Blog</Link>

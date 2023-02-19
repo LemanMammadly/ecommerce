@@ -9,6 +9,10 @@
 }
 
 
+.bestsellers .all .owl-carousel{
+    display: none;
+}
+
 .bestsellers .top i{
     color: #005099;
     font-size: 20px;
@@ -111,17 +115,28 @@
 
 @media(max-width:576px){
     .bestsellers{
-        padding: 2rem 0rem;
+        padding: 1rem 0rem;
     }
     
     .bestsellers .top h2{
+        margin-top: 20px;
         font-size: 28px;
     }
     .bestsellers .top i{
         display: none;
     }
-    .bestsellers .bottom{
-        display: flex;
-        flex-direction: column;
+    .bestsellers .normbottom{
+        display: none !important;
+    }
+    .bestsellers .owl-carousel{
+        display: block !important;
+    }
+    .bestsellers .owl-dots{
+        display: none;
     }
 }
+
+
+
+
+

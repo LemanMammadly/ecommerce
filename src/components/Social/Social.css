@@ -1,0 +1,56 @@
+.social .all .imgdiv img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.social .bottomsocial{
+    padding: 4rem 0;
+    margin-top: -190px;
+    text-align: center;
+    position: relative;
+}
+
+.social .bottomsocial .svg{
+    z-index: -1111;
+    color: #92C9D6;
+    width: 35%;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.social .bottomsocial a{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 55px;
+    color: #005099;
+    font-weight: bold;
+}
+
+.social .bottomsocial .followus{
+    font-size: 18px;
+    color: #005099;
+    font-weight: bold;
+}
+
+
+@media(max-width:576px){
+    .social .topsocial{
+        display: flex;
+        flex-direction: column;
+    }
+    .social .bottomsocial{
+        margin-top: 10px;
+    }
+    .social .bottomsocial a{
+        font-size: 28px;
+    }
+    .social .bottomsocial .followus{
+        font-size: 15px;
+    }
+    .social .bottomsocial .svg{
+        width: 93%;
+    }
+}
